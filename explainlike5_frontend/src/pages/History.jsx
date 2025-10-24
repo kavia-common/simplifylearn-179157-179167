@@ -21,9 +21,9 @@ function History({ items = [], onSelect = () => {} }) {
     el.style.right = '16px';
     el.style.padding = '10px 12px';
     el.style.borderRadius = '10px';
-    el.style.color = isError ? '#fff' : '#111827';
-    el.style.background = isError ? '#EF4444' : '#F59E0B';
-    el.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+    el.style.color = isError ? '#0f0f10' : '#0f0f10';
+    el.style.background = isError ? '#f5f5f5' : '#cccccc';
+    el.style.boxShadow = '0 10px 20px rgba(0,0,0,0.45)';
     el.style.fontWeight = '700';
     el.style.zIndex = 1000;
     document.body.appendChild(el);
@@ -82,8 +82,8 @@ function History({ items = [], onSelect = () => {} }) {
         </div>
       )}
       {error && (
-        <div className="mt-12 list-item" style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
-          <div className="small" style={{ color: '#EF4444' }}>{error}</div>
+        <div className="mt-12 list-item" style={{ borderColor: 'rgba(255,255,255,0.28)' }}>
+          <div className="small" style={{ color: '#f5f5f5' }}>{error}</div>
         </div>
       )}
 
@@ -103,7 +103,7 @@ function History({ items = [], onSelect = () => {} }) {
               </div>
               <div className="small">On {new Date(it.createdAt).toLocaleString()}</div>
               {it.preview && (
-                <div className="small" style={{ marginTop: 6, color: '#374151' }}>{it.preview}</div>
+                <div className="small" style={{ marginTop: 6, color: '#c7c7c7' }}>{it.preview}</div>
               )}
               <div style={{ marginTop: 8 }}>
                 <button className="btn btn-primary" onClick={() => onSelect(it)}>Open</button>

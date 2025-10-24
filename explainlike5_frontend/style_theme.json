@@ -1,0 +1,15 @@
+{
+  "name": "Black & White",
+  "description": "Monochrome UI with high-contrast text on dark surfaces; subtle grayscale gradients; no color accents.",
+  "tokens": {
+    "background": "#0f0f10",
+    "surface": "#121212",
+    "text": "#f5f5f5",
+    "primary": "#ffffff",
+    "secondary": "#cccccc",
+    "success": "#a3a3a3",
+    "error": "#ffffff",
+    "surface-contrast": "rgba(255,255,255,0.06)"
+  },
+  "notes": "To revert to Ocean Professional, restore the previous tokens in src/App.css and change branding text in App.js/NavBar.jsx back to 'Ocean Pro'."
+}

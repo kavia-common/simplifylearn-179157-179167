@@ -57,7 +57,7 @@ function App() {
         <div className="navbar-inner">
           <div className="brand">
             <div className="brand-badge">E5</div>
-            ExplainLike5 <span className="brand-sub">Ocean Pro</span>
+            ExplainLike5 <span className="brand-sub">Black & White</span>
           </div>
           <div className="nav-actions">
             <button

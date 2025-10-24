@@ -32,9 +32,9 @@ function Home({ onGenerated = () => {}, prefs = {} }) {
     el.style.right = '16px';
     el.style.padding = '10px 12px';
     el.style.borderRadius = '10px';
-    el.style.color = isError ? '#fff' : '#111827';
-    el.style.background = isError ? '#EF4444' : '#F59E0B';
-    el.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+    el.style.color = isError ? '#0f0f10' : '#0f0f10';
+    el.style.background = isError ? '#f5f5f5' : '#cccccc';
+    el.style.boxShadow = '0 10px 20px rgba(0,0,0,0.45)';
     el.style.fontWeight = '700';
     el.style.zIndex = 1000;
     document.body.appendChild(el);
@@ -104,8 +104,8 @@ function Home({ onGenerated = () => {}, prefs = {} }) {
           </div>
         )}
         {error && !loading && (
-          <div className="mt-16 sample-card" style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
-            <div className="topic-title" style={{ color: '#EF4444' }}>Error</div>
+          <div className="mt-16 sample-card" style={{ borderColor: 'rgba(255,255,255,0.28)' }}>
+            <div className="topic-title" style={{ color: '#f5f5f5' }}>Error</div>
             <div className="small">{error}</div>
           </div>
         )}
